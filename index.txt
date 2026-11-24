@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Special Two | ماتشات وأخبار الكورة</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --card: #161d27;
+    --card2: #1c2634;
+    --line: #26334a;
+    --text: #e8edf4;
+    --muted: #8b98ab;
+    --green: #2ea043;
+    --green-bright: #3fb950;
+    --gold: #d4a017;
+    --red: #e05252;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  a { color: var(--green-bright); }
+
+  header {
+    background: linear-gradient(135deg, #0f2b16 0%, #0d1117 60%);
+    border-bottom: 3px solid var(--green);
+    padding: 20px 16px 16px;
+    text-align: center;
+  }
+  .logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--green-bright);
+    direction: ltr;
+  }
+  .logo span { color: var(--text); }
+  .tagline { color: var(--muted); font-size: 13.5px; margin-top: 3px; }
+
+  .date-strip {
+    background: var(--card2);
+    text-align: center;
+    padding: 9px 12px;
+    font-size: 13.5px;
+    color: var(--muted);
+    border-bottom: 1px solid var(--line);
+  }
+  .date-strip strong { color: var(--text); }
+
+  .fresh-note {
+    margin: 12px 14px 0;
+    background: #12233a;
+    border: 1px solid #1a5fb4;
+    color: #9cc3f0;
+    font-size: 12.5px;
+    border-radius: 10px;
+    padding: 8px 12px;
+  }
+
+  .section { padding: 16px 14px 6px; }
+  .section-title {
+    font-size: 18px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  .section-title::before {
+    content: "";
+    width: 4px; height: 22px;
+    background: var(--green);
+    border-radius: 2px;
+  }
+  .section-sub { color: var(--muted); font-size: 13px; margin-bottom: 12px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+  .card h3 { font-size: 15.5px; font-weight: 800; margin-bottom: 6px; }
+  .card p { font-size: 14px; color: #c6d0dd; }
+  .card p + p { margin-top: 8px; }
+
+  .fixture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .fixture + .fixture { border-top: 1px dashed var(--line); }
+  .fixture .teams { font-weight: 700; }
+  .fixture .time {
+    color: var(--gold);
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .fixture .day {
+    color: var(--muted);
+    font-size: 12px;
+    display: block;
+  }
+
+  .links-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+  .link-pill {
+    background: var(--card2);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 5px 13px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--green-bright);
+  }
+  .link-pill.official { border-color: var(--green); }
+  .broadcast-note { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+
+  .league-grid { display: grid; gap: 12px; }
+  @media (min-width: 720px) {
+    body { max-width: 900px; margin: 0 auto; }
+    .league-grid { grid-template-columns: 1fr 1fr; align-items: start; }
+    .section-title { font-size: 20px; }
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12.5px;
+    padding: 22px 16px 34px;
+    border-top: 1px solid var(--line);
+    margin-top: 16px;
+  }
+  footer .brand { color: var(--green-bright); font-weight: 800; direction: ltr; display: inline-block; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">⚽ The Special <span>Two</span></div>
+  <div class="tagline">ماتشات وملخصات الكورة المصرية والعربية والأوروبية، ولينكات الجداول الرسمية والقنوات الناقلة</div>
+</header>
+
+<div class="date-strip">النهاردة <strong>الثلاثاء ٢٤ نوفمبر ٢٠٢٦</strong> — كل المواعيد بتوقيت القاهرة</div>
+
+<div class="fresh-note">المواعيد والملخصات دي بتاريخ ٢٤ نوفمبر ٢٠٢٦ وبتتحدث يدوياً. الجدول الكامل والمحدّث دايماً على لينك كل دوري الرسمي تحت.</div>
+
+<!-- ============ الدوري المصري ============ -->
+<div class="section">
+  <div class="section-title">الدوري المصري الممتاز</div>
+  <div class="section-sub">الجولة التاسعة — من ٢٣ لـ ٢٥ نوفمبر</div>
+
+  <div class="card">
+    <h3>ملخص الجولة: قمة أهلاوية جديدة مع بيراميدز</h3>
+    <p>الجولة التاسعة اتصدرتها مباراة الأهلي وبيراميدز يوم الاثنين، في صراع مباشر على القمة، والزمالك لعب مع الجونة في نفس اليوم وهو بيدور على استمرار النتائج الكويسة.</p>
+    <p>النهاردة الثلاثاء فيه ٤ مباريات، وأهمها المصري مع بتروجت أسيوط بالليل، وبكرة الأربعاء تكملة الجولة بـ ٣ مباريات.</p>
+
+    <div style="margin-top:10px">
+      <div class="fixture"><span class="teams">سموحة × البنك الأهلي المصري<span class="day">النهاردة الثلاثاء</span></span><span class="time">٥:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">زد × أبو قير للأسمدة<span class="day">النهاردة الثلاثاء</span></span><span class="time">٥:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">المصري × بتروجت أسيوط<span class="day">النهاردة الثلاثاء</span></span><span class="time">٨:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">المقاولون العرب × القناة<span class="day">النهاردة الثلاثاء</span></span><span class="time">٨:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">إنبي × سيراميكا كليوباترا<span class="day">بكرة الأربعاء</span></span><span class="time">٥:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">طلائع الجيش × وادي دجلة<span class="day">بكرة الأربعاء</span></span><span class="time">٥:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">غزل المحلة × بتروجت<span class="day">بكرة الأربعاء</span></span><span class="time">٨:٠٠ م</span></div>
+    </div>
+
+    <div class="links-row">
+      <a class="link-pill official" href="https://www.egyptianproleague.com/league/matches">الجدول الرسمي للدوري ←</a>
+      <a class="link-pill" href="https://watchit.com">المشاهدة على Watch iT ←</a>
+    </div>
+    <div class="broadcast-note">القناة الناقلة للدوري المصري: أون تايم سبورت. البث الرسمي أونلاين على Watch iT.</div>
+  </div>
+</div>
+
+<!-- ============ دوري أبطال أوروبا ============ -->
+<div class="section">
+  <div class="section-title">دوري أبطال أوروبا</div>
+  <div class="section-sub">الجولة الخامسة — النهاردة وبكرة</div>
+
+  <div class="card">
+    <h3>ليلتين نار: أرسنال × دورتموند، وسيتي × نابولي</h3>
+    <p>النهاردة الثلاثاء أقوى ماتشات: أرسنال يستقبل بوروسيا دورتموند، ومانشستر سيتي مع نابولي، وريال مدريد مع آيندهوفن. وبكرة الأربعاء: كلوب بروج × ليفربول، وباريس × روما، وليل × بايرن ميونخ.</p>
+
+    <div style="margin-top:10px">
+      <div class="fixture"><span class="teams">أرسنال × بوروسيا دورتموند<span class="day">النهاردة الثلاثاء</span></span><span class="time">١٠:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">مانشستر سيتي × نابولي<span class="day">النهاردة الثلاثاء</span></span><span class="time">١٠:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">ريال مدريد × آيندهوفن<span class="day">النهاردة الثلاثاء</span></span><span class="time">١٠:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">كلوب بروج × ليفربول<span class="day">بكرة الأربعاء</span></span><span class="time">١٠:٠٠ م</span></div>
+      <div class="fixture"><span class="teams">باريس سان جيرمان × روما<span class="day">بكرة الأربعاء</span></span><span class="time">١٠:٠٠ م</span></div>
+    </div>
+
+    <div class="links-row">
+      <a class="link-pill official" href="https://www.uefa.com/uefachampionsleague/fixtures-results/">الجدول الرسمي من UEFA ←</a>
+      <a class="link-pill" href="https://www.beinsports.com/en-mena">beIN SPORTS ←</a>
+    </div>
+    <div class="broadcast-note">الناقل الحصري في الشرق الأوسط: beIN SPORTS، والبث الرقمي على منصة TOD.</div>
+  </div>
+</div>
+
+<!-- ============ الدوريات العربية ============ -->
+<div class="section">
+  <div class="section-title">الدوريات العربية</div>
+  <div class="section-sub">السعودية والإمارات</div>
+
+  <div class="league-grid">
+    <div class="card">
+      <h3>دوري روشن السعودي</h3>
+      <p>الجولة ١٣ بتبدأ الخميس ٢٦ نوفمبر وتستمر لـ ٢٨ نوفمبر. الرابطة كانت أعلنت الرزنامة المحدثة للموسم بعد إعادة جدولة كأس آسيا ٢٠٢٧، ومباراة الأهلي والنصر المؤجلة اتلعبت يوم ٢٠ نوفمبر.</p>
+      <div class="links-row">
+        <a class="link-pill official" href="https://www.spl.com.sa/en/fixtures-results">الجدول الرسمي ←</a>
+        <a class="link-pill" href="https://shahid.mbc.net">شاهد VIP ←</a>
+      </div>
+      <div class="broadcast-note">الناقل: قنوات SSC، والبث الرقمي على شاهد VIP.</div>
+    </div>
+
+    <div class="card">
+      <h3>دوري أدنوك الإماراتي</h3>
+      <p>الدوري الإماراتي شغال بجولاته الأسبوعية، والجدول الكامل بالمواعيد والملاعب على الموقع الرسمي لدوري المحترفين الإماراتي.</p>
+      <div class="links-row">
+        <a class="link-pill official" href="https://www.uaeproleague.ae/en/fixtures">الجدول الرسمي ←</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ الدوريات الأوروبية ============ -->
+<div class="section">
+  <div class="section-title">الدوريات الأوروبية</div>
+  <div class="section-sub">إنجلترا وإسبانيا وإيطاليا وألمانيا</div>
+
+  <div class="league-grid">
+    <div class="card">
+      <h3>الدوري الإنجليزي</h3>
+      <p>أكبر ماتشات الأسبوع الجاي: ديربي الميرسيسايد إيفرتون × ليفربول يوم الأحد ٢٩ نوفمبر الساعة ٢ الضهر بتوقيت القاهرة، وفي نفس اليوم أرسنال × مانشستر سيتي ٦:٣٠ مساءً. والجمعة نوتنجهام فورست × تشيلسي.</p>
+      <div class="links-row">
+        <a class="link-pill official" href="https://www.premierleague.com/fixtures">الجدول الرسمي ←</a>
+        <a class="link-pill" href="https://www.beinsports.com/en-mena">beIN SPORTS ←</a>
+      </div>
+      <div class="broadcast-note">الناقل في الشرق الأوسط: beIN SPORTS ومنصة TOD.</div>
+    </div>
+
+    <div class="card">
+      <h3>الدوري الإسباني — لاليجا</h3>
+      <p>جدول لاليجا بالكامل بالمواعيد والقنوات على الموقع الرسمي. في مصر والوطن العربي الماتشات منقولة على beIN SPORTS.</p>
+      <div class="links-row">
+        <a class="link-pill official" href="https://www.laliga.com/en-GB/laliga-easports/calendar">الجدول الرسمي ←</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>الدوري الإيطالي — سيريا آ</h3>
+      <p>جدول الكالتشيو بالكامل على موقع ليجا سيريا آ الرسمي، والناقل في منطقتنا beIN SPORTS.</p>
+      <div class="links-row">
+        <a class="link-pill official" href="https://en.legaseriea.it/serie-a/fixtures-results">الجدول الرسمي ←</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>الدوري الألماني — بوندسليجا</h3>
+      <p>مواعيد مباريات البوندسليجا ونتايجها أول بأول على الموقع الرسمي، والمشاهدة في منطقتنا على beIN SPORTS.</p>
+      <div class="links-row">
+        <a class="link-pill official" href="https://www.bundesliga.com/en/bundesliga/fixtures">الجدول الرسمي ←</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ مصادر الأخبار ============ -->
+<div class="section">
+  <div class="section-title">مصادر الأخبار</div>
+  <div class="section-sub">أكبر المواقع الرياضية المصرية والعربية</div>
+
+  <div class="card">
+    <p>للأخبار العاجلة والتفاصيل الكاملة، دي أهم المصادر اللي بنرشحها:</p>
+    <div class="links-row">
+      <a class="link-pill" href="https://www.filgoal.com">في الجول ←</a>
+      <a class="link-pill" href="https://www.btolat.com">بطولات ←</a>
+      <a class="link-pill" href="https://www.beinsports.com/en-mena">beIN SPORTS ←</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span class="brand">The Special Two</span><br>
+  كل اللينكات هنا رسمية: جداول من مواقع الدوريات نفسها، ومشاهدة من القنوات والمنصات الناقلة بس. مفيش بث مقرصن.<br>
+  آخر تحديث يدوي: ٢٤ نوفمبر ٢٠٢٦.
+</footer>
+
+</body>
+</html>
